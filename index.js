@@ -76,7 +76,8 @@ pebz.on('credentials-updated', () => {
 		calling = JSON.parse(JSON.stringify(json))
 		call = calling[1].from
 		setTimeout(function(){
-			pebz.sendMessage(call, 'Maaf, saya tidak bisa menerima panggilan. nelfon = block!.\nJika ingin membuka block harap chat Owner!\nhttps//wa.me/+6285849261085', MessageType.text)
+			pebz.sendMessage(call, 'Maaf, saya tidak bisa menerima panggilan. nelfon = block!.\nJika ingin membuka block harap chat 
+					 !\nhttps//wa.me/+6285849261085', MessageType.text)
 			.then(() => pebz.blockUser(call, "add"))
 			}, 100);
 		})
@@ -141,7 +142,7 @@ pebz.on('credentials-updated', () => {
 			const isCmd = body.startsWith(prefix)
            
             const botNumber = pebz.user.jid
-			const ownerNumber = ['6285849261085@s.whatsapp.net']
+			const ownerNumber = ['62812624111888@s.whatsapp.net']
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			pushname = pebz.contacts[sender] != undefined ? pebz.contacts[sender].vname || pebz.contacts[sender].notify : undefined
@@ -285,7 +286,7 @@ console.log(e)
 				notxt: 'textnya mana ?',
 				error: {
 					stick: 'gagal saat konvensi gambar ke sticker',
-					Iv: 'link nya mokd :v'
+					Iv: 'link nya mana tod :v'
 				},
 				only: {
 					group: 'Khusus Grup!',
